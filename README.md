@@ -32,7 +32,8 @@ To run this project, you will need the following Pure Data setup:
 ## Repository Contents
 
 - `ipf.pd` – Core IPF abstraction  
-- `rave_ipf_control_demo.pd` – Example patch showing IPF modulation of RAVE
+- `rave-ipf-example.pd` – Example patch showing IPF modulation of RAVE
+-  `percussion.ts` – Example pre-trained RAVE model
 - `README.md` – This file  
 
 ---
