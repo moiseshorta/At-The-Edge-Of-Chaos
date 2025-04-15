@@ -7,15 +7,20 @@ This Pure Data (Pd) abstraction is part of the research project **"At the Edge o
 ## Project Background
 
 This research explores the question of integrating complex systems, specifically the **Impulse Pattern Formulation (IPF)** model with **RAVE (Realtime Audio Variational autoEncoder)** neural synthesis. 
-Based on the mathematical formulation of IPF as presented in Linke et al. (2019), this project leverages the model's ability to generate complex temporal dynamics—ranging from stable to chaotic behavior—through recursive feedback and delayed impulse interaction.
 
-The main objective is to use IPF’s behavior to control the **latent space** of RAVE, a neural audio synthesizer, allowing for expressive, multi-channel audio synthesis that blends deterministic control with emergent complexity.
+Based on the mathematical formulation of IPF as presented in Linke et al. (2019), this project leverages the model's ability to generate complex temporal dynamics—ranging from stability to chaos—through recursive feedback and delayed impulse interaction. These dynamics correspond to identifiable **behavioral regions** within the system, including:
 
-Each RAVE model acts as a virtual instrument or voice, modulated in real time by IPF’s output. The system is designed around three core principles:
+- **Stable Region**: Where the system produces predictable, periodic output patterns
+- **Chaotic Region**: Where the output becomes unpredictable and highly sensitive to small changes in input
+- **Edge-of-Chaos Region**: A transitional zone where the system exhibits a balance between order and unpredictability, ideal for dynamic sonic control
 
-- **Parameter-space mapping**: Connecting IPF’s alpha (α) and beta (β) parameters to RAVE’s latent space coordinates.
-- **Topology-aware coupling**: Reflecting IPF’s internal feedback and delay network structure across multiple RAVE instances.
-- **Multi-scale integration**: Managing sound at both the micro (sample/synthesis) and macro (structure/form) levels.
+The primary goal is to harness these regions to control the **latent space** of RAVE, resulting in expressive, multi-channel audio synthesis that blends deterministic modulation with emergent behavior.
+
+Each RAVE instance functions as a unique virtual voice or instrument. The system is designed around three central strategies:
+
+- **Parameter-space mapping**: Linking IPF’s parameters (alpha α, beta β, etc.) to RAVE's latent coordinates for expressive modulation
+- **Topology-aware coupling**: Using IPF’s delay/reflection topology to influence multiple RAVE instances in parallel
+- **Multi-scale integration**: Managing sonic structure at both the microsound and formal compositional levels
 
 ---
 
@@ -24,16 +29,17 @@ Each RAVE model acts as a virtual instrument or voice, modulated in real time by
 To run this project, you will need the following Pure Data setup:
 
 - **Pure Data 0.55** or later  
-- The **nn~ external** for neural synthesis (https://github.com/acids-ircam/nn_tilde)  
-- The **ELSE** library, installable via **Dekken** inside Pure Data
-- Download `percussion.ts` model from https://play.forum.ircam.fr/rave-vst-api/get_model/percussion
+- The **nn~ external** for neural synthesis ([GitHub repo](https://github.com/acids-ircam/nn_tilde))  
+- The **ELSE** library, installable via **Dekken** inside Pure Data  
+- A trained RAVE model file, such as `percussion.ts`, downloadable from:  
+  https://play.forum.ircam.fr/rave-vst-api/get_model/percussion
 
 ---
 
 ## Repository Contents
 
 - `ipf.pd` – Core IPF abstraction  
-- `rave-ipf-example.pd` – Example patch showing IPF modulation of RAVE
+- `rave-ipf-example.pd` – Example patch showing IPF modulation of RAVE  
 - `README.md` – This file  
 
 ---
@@ -41,27 +47,28 @@ To run this project, you will need the following Pure Data setup:
 ## Usage Instructions
 
 1. Open the `rave-ipf-example.pd` patch.
-2. Make sure `nn~` is properly installed and linked to a trained RAVE model.
-3. Adjust parameters such as Frequency, Alpha, and Beta using the GUI.
-4. Monitor how the system dynamically controls the latent space of one or more RAVE instances.
-5. Use the toggle controls to switch between stable and chaotic behaviors, or between first- and second-order IPF models.
+2. Ensure that `nn~` is properly installed and that you have a trained RAVE model available.
+3. Use the GUI to adjust IPF parameters such as **Frequency**, **Alpha**, and **Beta**.
+4. Observe how the system’s behavior shifts across stability, chaos, and edge-of-chaos zones in real time.
+5. Use toggle switches to explore first- and second-order IPF models or force transitions between stable and chaotic modes.
+6. The resulting modulation will dynamically control the latent parameters of one or more RAVE instances, producing highly varied and responsive audio outputs.
 
 ---
 
 ## Reference
 
-Linke, S., Bader, R., & Mores, R. (2019). *The Impulse Pattern Formulation (IPF) as a Model of Musical Instruments – Investigation of Stability and Limits*. Chaos: An Interdisciplinary Journal of Nonlinear Science. DOI: [10.1063/1.5092511](https://doi.org/10.1063/1.5092511)
+Linke, S., Bader, R., & Mores, R. (2019). *The Impulse Pattern Formulation (IPF) as a Model of Musical Instruments – Investigation of Stability and Limits*. Chaos: An Interdisciplinary Journal of Nonlinear Science.  
+DOI: [10.1063/1.5092511](https://doi.org/10.1063/1.5092511)
 
 ---
 
 ## Credits
 
 Developed by **Moisés Horta Valenzuela**  
-Ligeti Zentrum, Scientists & Artists in Residence Program 2025
+**Ligeti Zentrum, Scientists & Artists in Residence Program 2025**
 
 ---
 
 ## License
 
 MIT License. You are free to use, modify, and distribute this code with proper attribution.
-
