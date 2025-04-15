@@ -40,7 +40,7 @@ To run this project, you will need the following Pure Data setup:
 
 ## Usage Instructions
 
-1. Open the `rave_ipf_control_demo.pd` patch.
+1. Open the `rave-ipf-example.pd` patch.
 2. Make sure `nn~` is properly installed and linked to a trained RAVE model.
 3. Adjust parameters such as Frequency, Alpha, and Beta using the GUI.
 4. Monitor how the system dynamically controls the latent space of one or more RAVE instances.
