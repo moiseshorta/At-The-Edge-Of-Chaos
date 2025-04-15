@@ -25,7 +25,8 @@ To run this project, you will need the following Pure Data setup:
 
 - **Pure Data 0.55** or later  
 - The **nn~ external** for neural synthesis (https://github.com/acids-ircam/nn_tilde)  
-- The **ELSE** library, installable via **Dekken** inside Pure Data  
+- The **ELSE** library, installable via **Dekken** inside Pure Data
+- Download `percussion.ts` model from https://play.forum.ircam.fr/rave-vst-api/get_model/percussion
 
 ---
 
@@ -33,7 +34,6 @@ To run this project, you will need the following Pure Data setup:
 
 - `ipf.pd` – Core IPF abstraction  
 - `rave-ipf-example.pd` – Example patch showing IPF modulation of RAVE
--  `percussion.ts` – Example pre-trained RAVE model
 - `README.md` – This file  
 
 ---
