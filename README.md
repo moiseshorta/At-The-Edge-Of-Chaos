@@ -1,4 +1,4 @@
-# At-The-Edge-Of-Chaos
+# At The Edge Of Chaos
 
 This Pure Data (Pd) abstraction is part of the research project **"At the Edge of Chaos"**, developed during the **Ligeti Zentrum's Scientists & Artists in Residence Program 2025**. The author of the code is **Moisés Horta Valenzuela**.
 
