@@ -1,6 +1,12 @@
 # At The Edge Of Chaos
 
-This Pure Data (Pd) abstraction is part of the research project **"At the Edge of Chaos"**, developed during the **Ligeti Zentrum's Scientists & Artists in Residence Program 2025**. The author of the code is **Moisés Horta Valenzuela**.
+This Pure Data (Pd) abstraction is part of the artistic research project **"At the Edge of Chaos"**, developed during the **Ligeti Zentrum's Scientists & Artists in Residence Program 2025** by **Moises Horta Valenzuela**.
+
+The project proposes a novel integration of the **Impulse Pattern Formation (IPF)** algorithm with **RAVE (Realtime Audio Variational autoEncoder)** neural networks to generate dynamic, multi-channel audio performances. Rooted in the mathematical framework of IPF—described in Linke et al. (2019) as a recursive system of impulse reflection and feedback—the model exhibits complex behaviors such as stability, bifurcation, and chaos.
+
+By mapping IPF's emergent behavior to the **latent space** of RAVE models, this system enables the real-time control of multiple parallel RAVE instances, each acting as a distinct virtual instrument or sonic character. This creates coordinated spatial audio events that combine deterministic structure with unpredictable complexity.
+
+This repository contains Pure Data patches developed during the residency that demonstrate the interaction between IPF and RAVE, and serves as a toolkit for further research and creative development.
 
 ---
 
@@ -14,13 +20,7 @@ Based on the mathematical formulation of IPF as presented in Linke et al. (2019)
 - **Chaotic Region**: Where the output becomes unpredictable and highly sensitive to small changes in input
 - **Edge-of-Chaos Region**: A transitional zone where the system exhibits a balance between order and unpredictability, ideal for dynamic sonic control
 
-The primary goal is to harness these regions to control the **latent space** of RAVE, resulting in expressive, multi-channel audio synthesis that blends deterministic modulation with emergent behavior.
-
-Each RAVE instance functions as a unique virtual voice or instrument. The system is designed around three central strategies:
-
-- **Parameter-space mapping**: Linking IPF’s parameters (alpha α, beta β, etc.) to RAVE's latent coordinates for expressive modulation
-- **Topology-aware coupling**: Using IPF’s delay/reflection topology to influence multiple RAVE instances in parallel
-- **Multi-scale integration**: Managing sonic structure at both the microsound and formal compositional levels
+The primary goal is to harness these regions to control the **latent space** of RAVE, resulting in expressive neural audio synthesis that blends deterministic modulation with emergent behavior.
 
 ---
 
