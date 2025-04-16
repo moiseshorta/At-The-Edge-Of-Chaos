@@ -1,4 +1,4 @@
-# At The Edge Of Chaos
+# At The Edge Of Chaos: Exploring the Latent Space of neural audio synthesis with complex systems
 
 This Pure Data (Pd) abstraction is part of the artistic research project **"At the Edge of Chaos"**, developed during the **Ligeti Zentrum's Scientists & Artists in Residence Program 2025** by **Moisés Horta Valenzuela**.
 
