@@ -1,6 +1,6 @@
 # At The Edge Of Chaos
 
-This Pure Data (Pd) abstraction is part of the artistic research project **"At the Edge of Chaos"**, developed during the **Ligeti Zentrum's Scientists & Artists in Residence Program 2025** by **Moises Horta Valenzuela**.
+This Pure Data (Pd) abstraction is part of the artistic research project **"At the Edge of Chaos"**, developed during the **Ligeti Zentrum's Scientists & Artists in Residence Program 2025** by **Moisés Horta Valenzuela**.
 
 The project proposes a novel integration of the **Impulse Pattern Formation (IPF)** algorithm with **RAVE (Realtime Audio Variational autoEncoder)** neural networks to generate dynamic, multi-channel audio performances. Rooted in the mathematical framework of IPF—described in Linke et al. (2019) as a recursive system of impulse reflection and feedback—the model exhibits complex behaviors such as stability, bifurcation, and chaos.
 
